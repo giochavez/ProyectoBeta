@@ -71,8 +71,10 @@ int main(){
 	               case 1:
 	                  	printf("------------------------------------------------------------\n");
 		  				printf("Agregar polinomio.");   
-						printf("\n------------------------------------------------------------\n");   
+						printf("\n------------------------------------------------------------\n");
+						AGREGAR();
 						system("pause");
+						system("cls");
 	               break;
 	               case 2:
 	                    printf("------------------------------------------------------------\n");
@@ -646,6 +648,11 @@ void menuSUMA(){
         printf("------------------------------------------------------------------------------\n");
     }
     void GUARDAR(){
+        printf("------------------------------------------------------------------------------\n");
+        printf("\nEstamos trabajando para brindarle un mejor servicio, lamentamos las molestias que esto le genera\n");
+        printf("------------------------------------------------------------------------------\n");
+    }
+    void AGREGAR(){
         printf("------------------------------------------------------------------------------\n");
         printf("\nEstamos trabajando para brindarle un mejor servicio, lamentamos las molestias que esto le genera\n");
         printf("------------------------------------------------------------------------------\n");
