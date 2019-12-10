@@ -116,14 +116,18 @@ int main(){
 					case 7:
 	                  	printf("------------------------------------------------------------\n");
 		  				printf(" Cargar polinomios.");   
-						printf("\n------------------------------------------------------------\n");   
+						printf("\n------------------------------------------------------------\n");
+						CARGAR();
 					 	system("pause");
+					 	system("cls");
 					break;
 					case 8:
 	                  	printf("------------------------------------------------------------\n");
 		  				printf("Guardar polinomios.");   
-						printf("\n------------------------------------------------------------\n");   
+						printf("\n------------------------------------------------------------\n");
+						GUARDAR();
 	                	system("pause");
+	                	system("cls");
 					break;
 					case 9:
 	    	            SALIR();
@@ -489,7 +493,7 @@ void menuDERIVADA(){
 	Polinomio *polinomio;
 	int coeficiente,exponente;
 	inicializarPolinomio(&polinomio);
-	printf("Ingresa el polinomio (ingresa -1 en el exponente para finalizar):\n");
+	printf("Ingresa el polinomio SOLO ENTEROS(ingresa -1 en el exponente para finalizar):\n");
 	do{
 		printf("Coeficiente: ");
 		scanf("%d",&coeficiente);
@@ -517,7 +521,7 @@ void menuSUMA(){
 	printf("Ingresa por lo menos dos polinomios:\n");
 	do{
 		inicializarPolinomio(&polinomio);
-		printf("Ingresa el polinomio (ingresa -1 en el exponente para finalizar):\n");
+		printf("Ingresa el polinomio SOLO ENTEROS(ingresa -1 en el exponente para finalizar):\n");
 		do{
 			printf("Coeficiente: ");
 			scanf("%d",&coeficiente);
@@ -635,3 +639,14 @@ void menuSUMA(){
      printf(" + ");
     }
 }
+ //void QUE AUN NO TENEMOS
+    void CARGAR(){
+        printf("------------------------------------------------------------------------------\n");
+        printf("\nEstamos trabajando para brindarle un mejor servicio, lamentamos las molestias que esto le genera\n");
+        printf("------------------------------------------------------------------------------\n");
+    }
+    void GUARDAR(){
+        printf("------------------------------------------------------------------------------\n");
+        printf("\nEstamos trabajando para brindarle un mejor servicio, lamentamos las molestias que esto le genera\n");
+        printf("------------------------------------------------------------------------------\n");
+    }
