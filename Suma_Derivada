@@ -31,9 +31,9 @@ int main(){
 	char opcion;
 	int salir=0;
 	do{
-		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		printf("1) Diferenciaci\xA2n de un polinomio\n");
-		printf("2) Sumar dos o m\xA0s polinomios\n");
+		printf("\nMenu de opciones\n");
+		printf("1) Derivada de un polinomio\n");
+		printf("2) Sumar dos o mas polinomios\n");
 		printf("3) Salir\n");
 		opcion = getchar();
 		while(getchar()!='\n');
@@ -45,12 +45,12 @@ int main(){
 				menuSuma();
 			break;
 			case '3':
-				printf("Hasta luego (:\nPresiona ENTER para salir...");
+				printf("\nFin del programa\nPresiona ENTER para salir...\n");
 				getchar();
 				salir=1;
 			break;
 			default:
-				printf("Ingresa una opci\xA2n v\xA0lida\nPresiona ENTER para continuar...");
+				printf("Ingresa una opcion valida\nPresiona ENTER para continuar...\n");
 				while(getchar()!='\n');
 			break;
 		}
@@ -228,7 +228,7 @@ void menuSuma(){
 		while(getchar()!='\n');
 		getchar();
 		if(cantidadPolinomios>=2){
-			printf("¿Deseas ingresar otro polinomio?\n1)S\xA1\n2)No\n");
+			printf("¿Deseas ingresar otro polinomio?\n1)Si\n2)No\n");
 			opcion=getchar();
 			if(opcion=='2')
 				salir=1;
